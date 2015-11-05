@@ -23,6 +23,8 @@
 .. figure:: _static/basespace_web_1.png
    :align: left
 
+1.2. File Access (with BaseMount)
+--------------
 .. figure:: _static/basemount_intro.jpg
    :align: left
 
