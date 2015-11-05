@@ -20,14 +20,30 @@
 
 1.1. File Access (Traditional Way)
 --------------
+
 .. figure:: _static/basespace_web_1.png
    :align: left
 
 1.2. File Access (with BaseMount)
 --------------
+
 .. figure:: _static/basemount_intro.jpg
    :align: left
 
+1.4. What is BaseMount?
+---------------------
+
+**BaseMount** is a machanisum that enables access to your **basespace storage** as a **Linux file system**.
+
+1.5. Advantages of the BaseMount?
+---------------------
+
+- Have access to your Projects, Runs, and App results as your local files.
+- Can run **local apps** on basespace data **without downloading data to your local computer.**
+- Can save your local space.
+
+1.6. Official page
+----------------
 .. raw:: html
 
     <div style="margin-top:10px;">
