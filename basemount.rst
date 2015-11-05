@@ -11,7 +11,7 @@
 
 .. highlight:: rest
 
-.. figure:: Logo.png
+.. figure:: Logo.jpg
    :align: right
 
 **********************************************
