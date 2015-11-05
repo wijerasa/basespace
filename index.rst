@@ -19,7 +19,7 @@ MCIC Computational Biology Lab
 
 .. toctree::
    :maxdepth: 3
-   :caption: User Documentation
+   :caption: Illumina BaseMount Documentation
 
    basemount
    

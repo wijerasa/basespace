@@ -15,11 +15,14 @@
    :align: right
 
 **********************************************
-1. Base Mount
+1. Introduction
 **********************************************
 
-1.1. Introduction
----------
+1.1. Traditional Way
+--------------
+.. figure:: _static/basespace_web_1.png
+   :align: left
+
 .. raw:: html
 
     <div style="margin-top:10px;">
@@ -27,9 +30,9 @@
     </div>
 
 
-
-1.2. The Power of the BaseSpace API as a File System
------------------
+**********************************************
+2. The Power of the BaseSpace API as a File System
+**********************************************
 
 .. csv-table::
    :header: "NGS Data Analysis", "Contacts"
