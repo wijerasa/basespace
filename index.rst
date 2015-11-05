@@ -10,7 +10,7 @@
 
 .. highlight:: rest
 
-.. figure:: Logo.jpg
+.. figure:: _static/Logo.jpg
    :align: right
 
 
