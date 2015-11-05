@@ -18,9 +18,12 @@
 1. Introduction
 **********************************************
 
-1.1. Traditional Way
+1.1. File Access (Traditional Way)
 --------------
 .. figure:: _static/basespace_web_1.png
+   :align: left
+
+.. figure:: _static/basemount_intro.jpg
    :align: left
 
 .. raw:: html
