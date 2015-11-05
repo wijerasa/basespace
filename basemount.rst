@@ -42,10 +42,14 @@
 - Can run **local apps** on basespace data **without downloading data to your local computer.**
 - Can save your local storage space.
 
-> Although BaseMount does facilitate file download, we would recommend that since BaseMount allows convenient, fast, cached access to 
-> your BaseSpace metadata and files, you may find that many operations can be carried out without the need to download locally. During 
-> our testing, we have used BaseMount to grep through fastq files, extract blocks of reads from bam files and even use IGV on the bam 
-> files directly all without downloading files locally. This can be more convenient than including a download step and saves on the 
+> Although BaseMount does facilitate file download, we would recommend that since BaseMount allows convenient, fast, cached access to
+
+> your BaseSpace metadata and files, you may find that many operations can be carried out without the need to download locally. During
+
+> our testing, we have used BaseMount to grep through fastq files, extract blocks of reads from bam files and even use IGV on the bam
+
+> files directly all without downloading files locally. This can be more convenient than including a download step and saves on the
+
 > overheads of local storage.
 
 
