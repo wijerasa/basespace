@@ -23,7 +23,7 @@
 .. raw:: html
 
     <div style="margin-top:10px;">
-      <iframe width="560" height="315" src="https://basemount.basespace.illumina.com" frameborder="0" allowfullscreen></iframe>
+      <iframe width="1000" height="315" src="https://basemount.basespace.illumina.com" frameborder="0" allowfullscreen></iframe>
     </div>
 
 
