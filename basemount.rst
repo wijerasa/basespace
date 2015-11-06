@@ -61,10 +61,9 @@
 
 2.1. Quick Install
 ----------------
-.. highlight:: bash
-   :linenothreshold: 5
 
 .. code-block:: bash
+   :linenos:
    
    sudo bash -c "$(curl -L https://basemount.basespace.illumina.com/install/)"
 
@@ -78,8 +77,6 @@
 
 Ubuntu 14 & 15
 
-.. highlight:: bash
-   :linenothreshold: 3
 
 .. code-block:: bash
    :linenos:
