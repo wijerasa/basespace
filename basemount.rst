@@ -79,10 +79,8 @@
 2.2. Manual install
 ----------------
 
-2.2.1 Ubuntu
-^^^^^^^
 
-**Supported Operating Systems:**
+**Supported Operating Systems:** Ubuntu, Centos
 
 -----
 
@@ -99,17 +97,35 @@ Ubuntu 14 & 15
    sudo dpkg -i basemount_0.1.2.463-20150714_amd64.deb
 
 
-.. csv-table::
-   :header: "Next Generation Sequencing", "Contacts"
-   :widths: 35, 25
+2.3. Mounting Your BaseSpace Account
+----------------
 
-   "* High-troughput sequencing(Illumina Miseq platform)", "* Dr. Tea Meulia
-   * Dr. Fiorella Cisneros Carter
-   * Maria Elena Hernandez-Gonzalez"
+.. code-block:: bash
    
-.. seealso::
-   `MCIC main webpage for more details <http://mcic.osu.edu/>`_
-      
+   basemount --config {config_file_prefix} {mount-point folder}
+
+   basemount --config user1 ~/BaseSpace_Mount
+
+**Example:**
+
+------
+
+.. code-block:: bash
+   mkdir /export/NFS/Saranga/BaseSpace
+   mkdir /export/NFS/Maria/BaseSpace
+
+   basemount --config Maria /export/NFS/Maria/BaseSpace/
+
+.. figure:: _static/basemount_first.png
+   :align: left
+
+Then,
+
+.. figure:: _static/basemount_sec.png
+   :align: left
+
+
+
 
 
    
