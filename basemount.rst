@@ -70,7 +70,7 @@
 
 2.2. Manual install
 ----------------
-
+.. highlight:: bash
 
 **Supported Operating Systems:** Ubuntu, Centos
 
@@ -81,7 +81,7 @@ Ubuntu 14 & 15
 .. highlight:: bash
    :linenothreshold: 3
 
-.. parsed-literal::
+.. code-block:: bash
    
    wget https://bintray.com/artifact/download/basespace/BaseSpaceFS-DEB/bsfs_1.1.631-1_amd64.deb
    wget https://bintray.com/artifact/download/basespace/BaseMount-DEB/basemount_0.1.2.463-20150714_amd64.deb
@@ -93,9 +93,9 @@ Ubuntu 14 & 15
 ----------------
 
 .. parsed-literal::
+   :linenos:
    
    basemount --config {config_file_prefix} {mount-point folder}
-
    basemount --config user1 ~/BaseSpace_Mount
 
 **Example:**
@@ -103,10 +103,10 @@ Ubuntu 14 & 15
 ------
 
 .. parsed-literal::
+   :linenos:
 
    mkdir /export/NFS/Saranga/BaseSpace
    mkdir /export/NFS/Maria/BaseSpace
-
    basemount --config Maria /export/NFS/Maria/BaseSpace/
 
 
@@ -133,9 +133,13 @@ After you click "Accept",
 To access the folder, type,
 
 .. parsed-literal::
+   :linenos:
 
    cd /export/NFS/Maria/BaseSpace/
    ls
+
+.. parsed-literal::
+
    Projects  Runs
 
 
