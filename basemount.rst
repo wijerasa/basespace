@@ -70,7 +70,7 @@
 
 2.2. Manual install
 ----------------
-.. highlight:: bash
+
 
 **Supported Operating Systems:** Ubuntu, Centos
 
@@ -92,7 +92,7 @@ Ubuntu 14 & 15
 2.3. Mounting Your BaseSpace Account
 ----------------
 
-.. parsed-literal::
+.. highlight:: bash
    :linenos:
    
    basemount --config {config_file_prefix} {mount-point folder}
@@ -102,7 +102,7 @@ Ubuntu 14 & 15
 
 ------
 
-.. parsed-literal::
+.. highlight:: bash
    :linenos:
 
    mkdir /export/NFS/Saranga/BaseSpace
@@ -132,7 +132,7 @@ After you click "Accept",
 
 To access the folder, type,
 
-.. parsed-literal::
+.. highlight:: bash
    :linenos:
 
    cd /export/NFS/Maria/BaseSpace/
