@@ -43,9 +43,13 @@
 - Can save your local storage space.
 
  > Although BaseMount does facilitate file download, we would recommend that since BaseMount allows convenient, fast, cached access to
+
  > your BaseSpace metadata and files, you may find that many operations can be carried out without the need to download locally. During
+
  > our testing, we have used BaseMount to grep through fastq files, extract blocks of reads from bam files and even use IGV on the bam
+
  > files directly all without downloading files locally. This can be more convenient than including a download step and saves on the
+
  > overheads of local storage.
 
 
@@ -60,27 +64,40 @@
 
 
 **********************************************
-2. The Power of the BaseSpace API as a File System
+2. BaseMount Installation
 **********************************************
 
-.. csv-table::
-   :header: "NGS Data Analysis", "Contacts"
-   :widths: 35, 10
+2.1. Quick Install
+----------------
+.. highlight:: bash
+   :linenothreshold: 5
 
-   "* Handling large data sets
-   * Quality control
-   * Using standard and custome scripts to do data analysis
-   * Using Big Standalone servers", "* Dr. Asela Wijeratne
-   * Saranga Wijeratne"
+.. code-block:: bash
+   
+   sudo bash -c "$(curl -L https://basemount.basespace.illumina.com/install/)"
 
-.. csv-table::
-   :header: "Workshops & Training", "Contacts"
-   :widths: 35, 10
+2.2. Manual install
+----------------
 
-   "* Training on various NGS data analysis
-   * Training on Linux enviornment and shell scripting 
-   * Training on Amazon Web Services and OSC", "* Dr. Asela Wijeratne
-   * Saranga Wijeratne"
+2.2.1 Ubuntu
+^^^^^^^
+
+**Supported Operating Systems:**
+
+-----
+
+Ubuntu 14 & 15
+
+.. highlight:: bash
+   :linenothreshold: 3
+
+.. code-block:: bash
+   
+   wget https://bintray.com/artifact/download/basespace/BaseSpaceFS-DEB/bsfs_1.1.631-1_amd64.deb
+   wget https://bintray.com/artifact/download/basespace/BaseMount-DEB/basemount_0.1.2.463-20150714_amd64.deb
+   sudo dpkg -i --force-confmiss bsfs_1.1.631-1_amd64.deb
+   sudo dpkg -i basemount_0.1.2.463-20150714_amd64.deb
+
 
 .. csv-table::
    :header: "Next Generation Sequencing", "Contacts"
