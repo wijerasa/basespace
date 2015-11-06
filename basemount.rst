@@ -103,13 +103,16 @@ Ubuntu 14 & 15
 ------
 
 .. code-block:: bash
+
    mkdir /export/NFS/Saranga/BaseSpace
    mkdir /export/NFS/Maria/BaseSpace
 
    basemount --config Maria /export/NFS/Maria/BaseSpace/
 
+
 .. figure:: _static/basemount_first.png
    :align: left
+
 
 Then,
 
@@ -118,6 +121,13 @@ Then,
 
 
 
+After you click "Accept",
+
+.. figure:: _static/basemount_third.png
+   :align: left
+
+.. figure:: _static/basemount_fourth.png
+   :align: left
 
 
    
