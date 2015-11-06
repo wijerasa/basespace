@@ -81,7 +81,7 @@ Ubuntu 14 & 15
 .. highlight:: bash
    :linenothreshold: 3
 
-.. code-block:: bash
+.. parsed-literal::
    
    wget https://bintray.com/artifact/download/basespace/BaseSpaceFS-DEB/bsfs_1.1.631-1_amd64.deb
    wget https://bintray.com/artifact/download/basespace/BaseMount-DEB/basemount_0.1.2.463-20150714_amd64.deb
@@ -92,7 +92,7 @@ Ubuntu 14 & 15
 2.3. Mounting Your BaseSpace Account
 ----------------
 
-.. code-block:: bash
+.. parsed-literal::
    
    basemount --config {config_file_prefix} {mount-point folder}
 
@@ -102,7 +102,7 @@ Ubuntu 14 & 15
 
 ------
 
-.. code-block:: bash
+.. parsed-literal::
 
    mkdir /export/NFS/Saranga/BaseSpace
    mkdir /export/NFS/Maria/BaseSpace
@@ -132,15 +132,11 @@ After you click "Accept",
 
 To access the folder, type,
 
-.. code-block:: bash
-
-   cd /export/NFS/Maria/BaseSpace/
-
 .. parsed-literal::
 
-         ls
-
-         Projects  Runs
+   cd /export/NFS/Maria/BaseSpace/
+   ls
+   Projects  Runs
 
 
 .. toctree::
