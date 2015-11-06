@@ -114,7 +114,7 @@ Ubuntu 14 & 15
    :align: left
 
 
-Then,
+Then open your internet browser,
 
 .. figure:: _static/basemount_sec.png
    :align: left
@@ -130,7 +130,18 @@ After you click "Accept",
    :align: left
 
 
-   
+To access the folder, type,
+
+.. code-block:: bash
+
+   cd /export/NFS/Maria/BaseSpace/
+
+.. parsed-literal::
+
+         ls
+
+         Projects  Runs
+
 
 .. toctree::
    :maxdepth: 3
