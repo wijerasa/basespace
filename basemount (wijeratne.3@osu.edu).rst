@@ -61,25 +61,29 @@
 
 2.1. Quick Install
 ----------------
+.. highlight:: bash
+   :linenothreshold: 5
 
 .. code-block:: bash
-   :linenos:
    
    sudo bash -c "$(curl -L https://basemount.basespace.illumina.com/install/)"
 
 2.2. Manual install
 ----------------
 
+2.2.1 Ubuntu
+^^^^^^^
 
-**Supported Operating Systems:** Ubuntu, Centos
+**Supported Operating Systems:**
 
 -----
 
 Ubuntu 14 & 15
 
+.. highlight:: bash
+   :linenothreshold: 3
 
 .. code-block:: bash
-   :linenos:
    
    wget https://bintray.com/artifact/download/basespace/BaseSpaceFS-DEB/bsfs_1.1.631-1_amd64.deb
    wget https://bintray.com/artifact/download/basespace/BaseMount-DEB/basemount_0.1.2.463-20150714_amd64.deb
@@ -87,81 +91,20 @@ Ubuntu 14 & 15
    sudo dpkg -i basemount_0.1.2.463-20150714_amd64.deb
 
 
-2.3. Mounting Your BaseSpace Account
-----------------
+.. csv-table::
+   :header: "Next Generation Sequencing", "Contacts"
+   :widths: 35, 25
 
-.. code-block:: bash
-   :linenos:
+   "* High-troughput sequencing(Illumina Miseq platform)", "* Dr. Tea Meulia
+   * Dr. Fiorella Cisneros Carter
+   * Maria Elena Hernandez-Gonzalez"
    
-   basemount --config {config_file_prefix} {mount-point folder}
-   basemount --config user1 ~/BaseSpace_Mount
-
-**Example:**
-
-------
-
-.. code-block:: bash
-   :linenos:
-
-   mkdir /export/NFS/Saranga/BaseSpace
-   mkdir /export/NFS/Maria/BaseSpace
-   basemount --config Maria /export/NFS/Maria/BaseSpace/
+.. seealso::
+   `MCIC main webpage for more details <http://mcic.osu.edu/>`_
+      
 
 
-.. figure:: _static/basemount_first.png
-   :align: left
-
-
-Then open your internet browser,
-
-.. figure:: _static/basemount_sec.png
-   :align: left
-
-
-
-After you click "Accept",
-
-.. figure:: _static/basemount_third.png
-   :align: left
-
-.. figure:: _static/basemount_fourth.png
-   :align: left
-
-
-To access the folder, type,
-
-.. code-block:: bash
-   :linenos:
-
-   cd /export/NFS/Maria/BaseSpace/
-   ls
-
-.. parsed-literal::
-
-   Projects  Runs
-
-To see the contents in the Projects,
-.. code-block:: bash
-   :linenos:
-
-   ls -ls /export/NFS/Saranga/BaseSpace/Projects/HiSeq\ 2500\ -\ v4\ reagents\:\ TruSeq\ PCR\ Free\ \(4\ replicates\ of\ NA12877\)/Samples/NA12877_*/Files/
-
-.. parsed-literal::
    
-   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L1 (2)/Files/:
-   total 38644917
-   19181514 -r--r--r-- 1 root root 19641870141 Oct  3  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
-   19463403 -r--r--r-- 1 root root 19930524177 Oct  3  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
-
-   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L1/Files/:
-   total 38644917
-   19181514 -r--r--r-- 1 root root 19641870141 Oct  1  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
-   19463403 -r--r--r-- 1 root root 19930524177 Oct  1  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
-
-   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L2 (2)/Files/:
-   total 38581405
-   19146946 -r--r--r-- 1 root root 19606472306 Oct  3  2014 NA12877-L2_S2_L002_R1_001.fastq.gz
-   19434459 -r--r--r-- 1 root root 19900885631 Oct  3  2014 NA12877-L2_S2_L002_R2_001.fastq.gz
 
 .. toctree::
    :maxdepth: 3
