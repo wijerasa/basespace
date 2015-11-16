@@ -158,9 +158,11 @@ To see the contents in the Projects,
    62M -r--r--r-- 1 root root 62M Oct  5 14:09 Brain11_S23_L001_R1_001.fastq.gz
 
 
-**********************************
+
+
+**********************************************
 3. Basic analysis on fastq files
-************************************
+**********************************************
 
 You can get basic information about your "fastq" files, such as:
 
@@ -207,7 +209,7 @@ without having to download them.
 
 
 
-**Example: Count the  number of sequneces using using `fastqutils <http://ngsutils.org/modules/fastqutils/>`_**
+**Example: Count the  number of sequneces using using `fastqutils <http://ngsutils.org/modules/fastqutils/>`_ .**
 
 --------------
 
