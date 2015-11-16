@@ -149,46 +149,78 @@ To see the contents in the Projects,
 
 .. parsed-literal::
    
-   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L1 (2)/Files/:
-   total 37G
-   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
-   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
+   /export/NFS/Saranga/BaseSpace/Projects/MiSeq v3: TruSeq Targeted RNA Expression (NFkB & Cell Cycle: Human Brain-Liver-UHRR)/Samples/Brain10/Files/:
+   total 85M
+   85M -r--r--r-- 1 root root 85M Oct  5 14:09 Brain10_S22_L001_R1_001.fastq.gz
 
-   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L1/Files/:
-   total 37G
-   19G -r--r--r-- 1 root root 19G Oct  1  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
-   19G -r--r--r-- 1 root root 19G Oct  1  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
+   /export/NFS/Saranga/BaseSpace/Projects/MiSeq v3: TruSeq Targeted RNA Expression (NFkB & Cell Cycle: Human Brain-Liver-UHRR)/Samples/Brain11/Files/:
+   total 62M
+   62M -r--r--r-- 1 root root 62M Oct  5 14:09 Brain11_S23_L001_R1_001.fastq.gz
+
 
 2.4. Basic analysis on fastq files
 ----------------
 
 You can get basic information about your "fastq" files, such as:
 
+- View sequences inside "fastq" files
 - Number of reads for each "fastq" file
 - Read length distribution 
 
 without having to download them.
 
-**Example: Using natice Linux commands**
+
+
+**Example: View your data**
 
 --------------
 
 .. code-block:: bash
    :linenos:
 
-   zcat  /export/NFS/Saranga/BaseSpace/Projects/HiSeq\ 2500\ -\ v4\ reagents\:\ TruSeq\ PCR\ Free\ \(4\ replicates\ of\ NA12877\)/Samples/NA12877_L3/Files/NA12877-L3_S3_L003_R1_001.fastq.gz | grep -c "@SN101:1337"
+   zcat /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/Brain1/Files/Brain1_S13_L001_R1_001.fastq.gz | head -n 4
+
+.. parsed-literal::
+
+   @M03438:48:000000000-AGGNU:1:1101:11792:1006 1:N:0:13
+   NTCAATCCCCAGCAGTGGAATAAGGCCTGTTGTTCCTTGCAGTGGATCCTG
+   +
+   #88ABFFGCFEEG<FF<FDFFEGGFGGFCFGFFGGEGGGGGGFGGFGGGGG
 
 
-**Example: Using `fastqutils <http://ngsutils.org/modules/fastqutils/>`_**
+**Example: Count the  number of sequneces using native Linux commands**
 
 --------------
 
 .. code-block:: bash
    :linenos:
 
-   fastqutils names /export/NFS/Saranga/BaseSpace/Projects/HiSeq\ 2500\ -\ v4\ reagents\:\ TruSeq\ PCR\ Free\ \(4\ replicates\ of\ NA12877\)/Samples/NA12877_L3/Files/NA12877-L3_S3_L003_R1_001.fastq.gz | wc -l
+   zcat  /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/Brain1/Files/Brain1_S13_L001_R1_001.fastq.gz | grep -c "@M03438:"
+
+.. parsed-literal::
+
+   838876
+
+:FILE SIZE: 85M
+:TIME TAKEN: 1.327s
 
 
+
+**Example: Count the  number of sequneces using using `fastqutils <http://ngsutils.org/modules/fastqutils/>`_**
+
+--------------
+
+.. code-block:: bash
+   :linenos:
+
+   fastqutils names /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/Brain1/Files/Brain1_S13_L001_R1_001.fastq.gz | wc -l
+
+.. parsed-literal::
+
+   838876
+
+:FILE SIZE: 85M
+:TIME TAKEN: 23.00s
 
 .. toctree::
    :maxdepth: 3
