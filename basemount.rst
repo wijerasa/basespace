@@ -365,7 +365,7 @@ without having to download them.
 
 
 .. code-block:: bash
-   :linenos
+   :linenos:
 
    bamutils stats /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/AppSessions/TopHat\ Alignment\:\ No\ cSNP\ or\ RNA\ Editing\ found\ \(36\ Samples\)/AppResults.26970091.Brain1/Files/alignments/Brain1.alignments.bam
 
