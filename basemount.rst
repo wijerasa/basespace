@@ -145,24 +145,98 @@ To see the contents in the Projects,
 .. code-block:: bash
    :linenos:
    
-   ls -ls /export/NFS/Saranga/BaseSpace/Projects/HiSeq\ 2500\ -\ v4\ reagents\:\ TruSeq\ PCR\ Free\ \(4\ replicates\ of\ NA12877\)/Samples/NA12877_*/Files/
+   ls -lsh /export/NFS/Saranga/BaseSpace/Projects/HiSeq\ 2500\ -\ v4\ reagents\:\ TruSeq\ PCR\ Free\ \(4\ replicates\ of\ NA12877\)/Samples/NA12877_*/Files/
 
 .. parsed-literal::
    
    /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L1 (2)/Files/:
-   total 38644917
-   19181514 -r--r--r-- 1 root root 19641870141 Oct  3  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
-   19463403 -r--r--r-- 1 root root 19930524177 Oct  3  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
 
    /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L1/Files/:
-   total 38644917
-   19181514 -r--r--r-- 1 root root 19641870141 Oct  1  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
-   19463403 -r--r--r-- 1 root root 19930524177 Oct  1  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  1  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  1  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
 
    /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L2 (2)/Files/:
-   total 38581405
-   19146946 -r--r--r-- 1 root root 19606472306 Oct  3  2014 NA12877-L2_S2_L002_R1_001.fastq.gz
-   19434459 -r--r--r-- 1 root root 19900885631 Oct  3  2014 NA12877-L2_S2_L002_R2_001.fastq.gz
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L2_S2_L002_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L2_S2_L002_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L2/Files/:
+   total 0
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L3 (2)/Files/:
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L3_S3_L003_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L3_S3_L003_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L3/Files/:
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  1  2014 NA12877-L3_S3_L003_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  1  2014 NA12877-L3_S3_L003_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L4 (2)/Files/:
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L4_S4_L004_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L4_S4_L004_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L4/Files/:
+   total 0
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L5 (2)/Files/:
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L5_S5_L005_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L5_S5_L005_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L5/Files/:
+   total 0
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L6 (2)/Files/:
+   total 38G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L6_S6_L006_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L6_S6_L006_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L6/Files/:
+   total 0
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L7 (2)/Files/:
+   total 38G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L7_S7_L007_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L7_S7_L007_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L7/Files/:
+   total 0
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L8 (2)/Files/:
+   total 37G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L8_S8_L008_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L8_S8_L008_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_L8/Files/:
+   total 0
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_rep1/Files/:
+   total 74G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L1_S1_L001_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L1_S1_L001_R2_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L2_S2_L002_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L2_S2_L002_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_rep2/Files/:
+   total 74G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L3_S3_L003_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L3_S3_L003_R2_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L4_S4_L004_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L4_S4_L004_R2_001.fastq.gz
+
+   /export/NFS/Saranga/BaseSpace/Projects/HiSeq 2500 - v4 reagents: TruSeq PCR Free (4 replicates of NA12877)/Samples/NA12877_rep3/Files/:
+   total 74G
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L5_S5_L005_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L5_S5_L005_R2_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L6_S6_L006_R1_001.fastq.gz
+   19G -r--r--r-- 1 root root 19G Oct  3  2014 NA12877-L6_S6_L006_R2_001.fastq.gz
 
 .. toctree::
    :maxdepth: 3
