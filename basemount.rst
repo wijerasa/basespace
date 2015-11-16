@@ -141,9 +141,10 @@ To access the folder, type,
    Projects  Runs
 
 To see the contents in the Projects,
+
 .. code-block:: bash
    :linenos:
-
+   
    ls -ls /export/NFS/Saranga/BaseSpace/Projects/HiSeq\ 2500\ -\ v4\ reagents\:\ TruSeq\ PCR\ Free\ \(4\ replicates\ of\ NA12877\)/Samples/NA12877_*/Files/
 
 .. parsed-literal::
