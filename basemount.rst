@@ -207,7 +207,7 @@ without having to download them.
 
 
 
-**Example: Count the  number of sequneces using using `fastqutils <http://ngsutils.org/modules/fastqutils/>`_ **
+**Example: Count the  number of sequneces using using `fastqutils <http://ngsutils.org/modules/fastqutils/>`_**
 
 --------------
 
@@ -231,7 +231,7 @@ without having to download them.
 .. code-block:: bash
    :linenos:
 
-   fastqutils stats /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/Brain1/Files/Brain1_S13_L001_R1_001.fastq.gz | wc -l
+   fastqutils stats /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/Brain1/Files/Brain1_S13_L001_R1_001.fastq.gz
 
 .. parsed-literal::
 
