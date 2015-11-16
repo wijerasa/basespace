@@ -157,15 +157,16 @@ To see the contents in the Projects,
    total 62M
    62M -r--r--r-- 1 root root 62M Oct  5 14:09 Brain11_S23_L001_R1_001.fastq.gz
 
-********************
+
+**********************************
 3. Basic analysis on fastq files
-******************
+************************************
 
 You can get basic information about your "fastq" files, such as:
 
 - View sequences inside "fastq" files
 - Number of reads for each "fastq" file
-- Read length distribution 
+- Basic statics and read length distribution 
 
 without having to download them.
 
@@ -230,7 +231,7 @@ without having to download them.
 .. code-block:: bash
    :linenos:
 
-   fastqutils names /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/Brain1/Files/Brain1_S13_L001_R1_001.fastq.gz | wc -l
+   fastqutils stats /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/Brain1/Files/Brain1_S13_L001_R1_001.fastq.gz | wc -l
 
 .. parsed-literal::
 
