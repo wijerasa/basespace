@@ -312,6 +312,100 @@ without having to download them.
 :FILE SIZE: 85M
 :TIME TAKEN: 1.10m
 
+**********************************************
+3. Basic analysis on Alignment files (BAM)
+**********************************************
+
+**Example: Check bam headers**
+
+--------------
+
+.. code-block:: bash
+   :linenos:
+
+   samtools view -H /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/AppSessions/TopHat\ Alignment\:\ No\ cSNP\ or\ RNA\ Editing\ found\ \(36\ Samples\)/AppResults.26970091.Brain1/Files/alignments/Brain1.alignments.bam
+
+.. parsed-literal::
+   
+   @HD   VN:1.0   SO:coordinate
+   @RG   ID:19 SM:Brain1
+   @SQ   SN:chrM  LN:16571
+   @SQ   SN:chr1  LN:249250621
+   @SQ   SN:chr2  LN:243199373
+   @SQ   SN:chr3  LN:198022430
+   @SQ   SN:chr4  LN:191154276
+   @SQ   SN:chr5  LN:180915260
+   @SQ   SN:chr6  LN:171115067
+   @SQ   SN:chr7  LN:159138663
+   @SQ   SN:chr8  LN:146364022
+   @SQ   SN:chr9  LN:141213431
+   @SQ   SN:chr10 LN:135534747
+   @SQ   SN:chr11 LN:135006516
+   @SQ   SN:chr12 LN:133851895
+   @SQ   SN:chr13 LN:115169878
+   @SQ   SN:chr14 LN:107349540
+   @SQ   SN:chr15 LN:102531392
+   @SQ   SN:chr16 LN:90354753
+   @SQ   SN:chr17 LN:81195210
+   @SQ   SN:chr18 LN:78077248
+   @SQ   SN:chr19 LN:59128983
+   @SQ   SN:chr20 LN:63025520
+   @SQ   SN:chr21 LN:48129895
+   @SQ   SN:chr22 LN:51304566
+   @SQ   SN:chrX  LN:155270560
+   @SQ   SN:chrY  LN:59373566
+   @PG   ID:TopHat   VN:2.0.7 CL:/illumina/development/IsisRNA/2.4.19.5/IsisRNA_Tools/bin/tophat --bowtie1 --read-realign-edit-dist 1 --segment-length 24 -o /data/input/Alignment/samples/Brain1/replicates/Brain1/tophat_main -p 1 --GTF /illumina/development/Genomes/Homo_sapiens/UCSC/hg19/Annotation/Genes/genes.gtf --rg-id 19 --rg-sample Brain1 --library-type fr-firststrand --no-coverage-search --keep-fasta-order /illumina/development/Genomes/Homo_sapiens/UCSC/hg19/Sequence/BowtieIndex/genome /data/input/Alignment/samples/Brain1/replicates/Brain1/filtered/Brain1_S20_L001_R1_001.fastq.gz
+
+:FILE SIZE: 17M
+:TIME TAKEN: 0.006s
+
+**Example: Check basic statistics on a Bam file**
+
+--------------
+
+
+.. code-block:: bash
+   :linenos
+
+   bamutils stats /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/AppSessions/TopHat\ Alignment\:\ No\ cSNP\ or\ RNA\ Editing\ found\ \(36\ Samples\)/AppResults.26970091.Brain1/Files/alignments/Brain1.alignments.bam
+
+.. parsed-literal::
+
+   Reads:   766531
+   Mapped:  766531
+   Unmapped:   0
+
+   Flag distribution
+   [0x010] Reverse complimented  383242   50.00%
+   [0x100] Secondary alignment   47 0.01%
+
+
+   Reference counts  count
+   chr1  32252
+   chr10 6829
+   chr11 45127
+   chr12 74524
+   chr13 24336
+   chr14 81664
+   chr15 254
+   chr16 5704
+   chr17 46662
+   chr18 9922
+   chr19 25644
+   chr2  32527
+   chr20 10708
+   chr21 22
+   chr22 7805
+   chr3  83585
+   chr4  42487
+   chr5  47865
+   chr6  106512
+   chr7  18024
+   chr8  6921
+   chr9  25334
+   chrM  0
+   chrX  31823
+   chrY  0
 
 .. toctree::
    :maxdepth: 3
