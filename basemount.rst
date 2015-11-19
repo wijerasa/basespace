@@ -462,7 +462,7 @@ According to `illumina <https://help.basespace.illumina.com/articles/descriptive
 
 Every new directory access made by BaseMount relies on FUSE, the BaseSpace API and the user's credentials. This mechanism means that, as currently available, BaseMount does not support the following types of access:
 
-Cluster access, where many compute nodes can access the files. FUSE mounted file systems are per-host and cannot be accessed from many hosts without additional infrastructure.
-BaseMount also doesn't refresh files or directories. In order to reflect changes done via the Web GUI in your command line tree, you currently need to unmount (basemount --unmount ) and restart BaseMount.
-The Runs Files directory is not mounted automatically for you as there can be 100k + files available in that mount which can take a couple minutes to load for really large runs. You can still mount this directory manually if needed.
-In general, lots of concurrent requests can cause stability issues on a resource constrained system. Keep in mind, this is an early release and stability will increase.
+- Cluster access, where many compute nodes can access the files. FUSE mounted file systems are per-host and cannot be accessed from many hosts without additional infrastructure.
+- BaseMount also doesn't refresh files or directories. In order to reflect changes done via the Web GUI in your command line tree, you currently need to unmount (basemount --unmount ) and restart BaseMount.
+- The Runs Files directory is not mounted automatically for you as there can be 100k + files available in that mount which can take a couple minutes to load for really large runs. You can still mount this directory manually if needed.
+- In general, lots of concurrent requests can cause stability issues on a resource constrained system. Keep in mind, this is an early release and stability will increase.
