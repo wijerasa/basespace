@@ -33,7 +33,7 @@
 1.4. What is BaseMount?
 ---------------------
 
-**BaseMount** is a machanisum that enables access to your **basespace storage** as a **Linux file system**.
+**BaseMount** is a mechanisum that enables access to your **basespace storage** as a **Linux file system**.
 
 1.5. Advantages of the BaseMount?
 ---------------------
@@ -164,13 +164,14 @@ To see the contents in the Projects,
 3. Basic analysis on fastq files
 **********************************************
 
-You can get basic information about your "fastq" files, such as:
+You can get basic information about your Fastq files without having to download them.
+Such as:
 
-- View sequences inside "fastq" files
-- Number of reads for each "fastq" file
-- Basic statics and read length distribution 
+- View sequences inside Fastq files
+- Number of reads for each Fastq file
+- Basic statistics and read length distribution 
 
-without having to download them.
+
 
 
 
@@ -209,7 +210,7 @@ without having to download them.
 
 
 
-**Example: Count the  number of sequneces using using `fastqutils <http://ngsutils.org/modules/fastqutils/>`_ .**
+**Example: Count the  number of sequneces using using** `fastqutils <http://ngsutils.org/modules/fastqutils/>`_ .
 
 --------------
 
@@ -313,7 +314,7 @@ without having to download them.
 :TIME TAKEN: 1.10m
 
 **********************************************
-3. Basic analysis on Alignment files (BAM)
+4. Basic analysis on Alignment files (BAM)
 **********************************************
 
 **Example: Check bam headers**
@@ -410,6 +411,58 @@ without having to download them.
 .. toctree::
    :maxdepth: 3
 
-   
+
+**********************************************
+5. Metadata
+**********************************************
+
+In each directory, BaseMount provides a number of hidden files with extra BaseSpace metadata.
+These are hidden files and their names start with a ".".
+
+.. code-block:: bash
+   :linenos:
+
+   cd /export/NFS/Saranga/BaseSpace/Projects/MiSeq\ v3\:\ TruSeq\ Targeted\ RNA\ Expression\ \(NFkB\ \&\ Cell\ Cycle\:\ Human\ Brain-Liver-UHRR\)/Samples/
+   ls -l .?* #List only the hidden files
+
+.. parsed-literal::
+
+   -r-------- 1 swijeratne swijeratne        149 Nov 16 11:29 .curl
+   .
+   .
+   .
+   -r--r--r-- 1 swijeratne swijeratne      40674 Nov 16 11:29 .json
 
 
+**Display content of the .json file**
+
+--------
+
+.. code-block:: bash
+   :linenos:
+
+   cat .json
+
+
+**Query through a .json file qith "jq"**
+
+.. code-block:: bash
+   :linenos:
+
+   cat .json | jq '.Response.Items[] | select(.NumReadsPF ) | {Name: .Name, PF : .NumReadsPF}'
+   cat .json | jq '.Response.Items[] | select(.NumReadsPF ) | "\( .Name)\t\(.NumReadsPF)"'
+   cat .json | jq '.Response.Items[] | select(.NumReadsPF > 747912) | "\( .Name)\t\(.NumReadsPF)"'
+
+
+
+**********************************************
+6. Limitations of BaseMount
+**********************************************
+According to `illumina <https://help.basespace.illumina.com/articles/descriptive/introduction-to-basemount/>`_,
+
+Every new directory access made by BaseMount relies on FUSE, the BaseSpace API and the user's credentials. This mechanism means that, as currently available, BaseMount does not support the following types of access:
+
+Cluster access, where many compute nodes can access the files. FUSE mounted file systems are per-host and cannot be accessed from many hosts without additional infrastructure.
+BaseMount also doesn't refresh files or directories. In order to reflect changes done via the Web GUI in your command line tree, you currently need to unmount (basemount --unmount ) and restart BaseMount.
+The Runs Files directory is not mounted automatically for you as there can be 100k + files available in that mount which can take a couple minutes to load for really large runs. You can still mount this directory manually if needed.
+In general, lots of concurrent requests can cause stability issues on a resource constrained system. Keep in mind, this is an early release and stability will increase.
